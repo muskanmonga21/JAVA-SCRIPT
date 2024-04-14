@@ -228,3 +228,143 @@ console.log("25" + "10" - 5); // 2507
 console.log("25" - "10" + 5); // 20
 console.log("25" - "10" + "5"); //  155
 console.log(2 + 3 + 4 + "5"); // 95
+
+// Day - 5 //
+
+// 5 falsy value: 0, '', undefined, null, NaN
+console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean("Bhavya"));
+console.log(Boolean({}));
+console.log(Boolean(""));
+
+const money = 0;
+if (money) {
+  console.log("Don't Spend it all :) ");
+} else {
+  console.log("Get a job");
+}
+
+let height;
+if (height) {
+  console.log("YaY! height is defined");
+} else {
+  console.log("height is undefined");
+}
+
+// Equality operator == vs ===
+
+const ageToBe = 21;
+if (ageToBe === 21) console.log("You just became an adult :D");
+
+// const favourite = Number(prompt("What's your favourite number?"));
+// console.log(favourite);
+// console.log(typeof favourite);
+
+// if (favourite == 22) {
+//   console.log("Cool! 22 is an amazing number!");
+// } else if (favourite === 6) {
+//   console.log("6 is a cool number");
+// } else if (favourite === 8) {
+//   console.log("8 is a cool number!");
+// } else {
+//   console.log("Number is not 22 or 8 or 6");
+// }
+
+// !== (loose), !=== (Strict)
+
+// if (favourite !== 22) console.log("Why not 22?");
+
+// DAY 6 //
+
+const hasDL = true;
+// const hasGoodVision = false;
+
+// && [AND], || [OR], ! [NOT]
+
+// console.log(hasDL && hasGoodVision);
+// console.log(hasDL || hasGoodVision);
+// console.log(!hasDL);
+
+// const hasGoodVision = true;
+// const shouldDrive = hasDL && hasGoodVision;
+// if (hasDL && hasGoodVision) {
+//   console.log("Bhumika is now able to drive");
+// } else {
+//   console.log("Someone else should drive....");
+// }
+
+// const isTried = true;
+// console.log(hasDL && hasGoodVision && !isTried);
+
+const day = "Tuesday";
+
+switch (day) {
+  case "Monday":
+    console.log("Go to goa");
+    console.log("Go to coding meetup");
+    break;
+  case "Tuesday":
+    console.log("Prepare meetup details");
+    break;
+  case "Wednesday":
+    console.log("Write code example");
+    break;
+  case "Thrusday":
+    console.log("DO the correction needed");
+  default:
+    console.log("Not a valid day");
+}
+
+if (day === "monday") {
+} else if (day === "tuesday") {
+} else if (day === "wednesday") {
+} else {
+  console.log("Not a valid day!!!");
+}
+
+const theAge = 23;
+
+// age >= 18
+//   ? console.log("I like to drink Wine🍷")
+//   : console.log("I like to drink Water💧");
+
+const drink = age >= 18 ? "I like to drink Wine🍷" : "I like to drink Water💧";
+console.log(drink);
+
+let drink2;
+if (age >= 18) {
+  drink2 = "wine🍷";
+} else {
+  drink2 = "Water💧";
+}
+
+console.log(drink2);
+
+console.log(`I like to drink ${age >= 18 ? "Wine🍷" : "Water💧"}`);
+
+// CHALLENGE 3 //
+//  DATA
+const dolphin = [96, 108, 89];
+const dolphinBonus1 = [97, 112, 101];
+const dolphinBonus2 = [97, 112, 101];
+const koala = [88, 91, 110];
+const koalaBonus1 = [109, 95, 123];
+const koalaBonus2 = [109, 95, 106];
+
+const dolphinavg = 96 + 108 + 89 + 97 + 112 + 101 + 97 + 112 + 101;
+console.log(dolphinavg / 9);
+const koalaavg = 88 + 91 + 110 + 109 + 95 + 123 + 109 + 95 + 106;
+console.log(dolphinavg / 9);
+
+// compare avg scores
+if (dolphinavg > koalaavg) {
+  console.log("Dolphin wins!!");
+} else if (dolphinavg < koalaavg) {
+  console.log("Koala Wins!!");
+} else {
+  console.log("It's a Draw!");
+}
+
+// CHALLANGE 4 //
+// DATA
