@@ -234,16 +234,16 @@ console.log(about["last" + nameKey]);
 // In this case dot notation will not work
 // console.log(about."last" + nameKey)
 
-// Prompt
-const interestedIn = prompt(
-  "What do you want to know about Muskan? Choose between firstName, lastName, age, job, like and friend"
-);
+// // Prompt
+// const interestedIn = prompt(
+//   "What do you want to know about Muskan? Choose between firstName, lastName, age, job, like and friend"
+// );
 
-if (about[interestedIn]) {
-  console.log(about[interestedIn]);
-} else {
-  console.log("Wrong Request!! Put the option correctly as it shows.");
-}
+// if (about[interestedIn]) {
+//   console.log(about[interestedIn]);
+// } else {
+//   console.log("Wrong Request!! Put the option correctly as it shows.");
+// }
 
 about.location = "SIRSA";
 about["X-handle"] = "@mongamuskan0";
@@ -262,3 +262,28 @@ console.log(bhavya["firstName"]);
 console.log(
   `${bhavya["firstName"]} has ${bhavya.friends.length} freinds and his best friend is called ${bhavya.friends[0]}`
 );
+
+// CHALLENGE
+
+// "Muskan is a 'age' years student, and she has 'a' - 'not' driving license"
+
+const muskan = {
+  firstName: "Muskan",
+  lastName: "Monga",
+  birthYear: 2002,
+  job: "Student",
+  like: "Coding",
+  friend: ["Rachel", "Remi", "David", "Tony", "Ben"],
+  dirverLicense: true,
+  calcAge: function () {
+    this.age = 2024 - this.birthYear;
+    return this.age;
+  },
+  getSummary: function () {
+    return `${this.firstName} is a ${this.calcAge()} years old ${
+      this.job
+    }, and she has ${this.dirverLicense ? "a" : "no"} driver's licence`;
+  },
+};
+
+console.log(muskan.getSummary());
