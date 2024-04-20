@@ -178,3 +178,87 @@ const ages = [
   calcAge(year[year.length - 1]),
 ];
 console.log(ages);
+
+const friend = ["Rachel", "Remi", "David", "Tony", "Ben"];
+console.log(friend);
+
+// ADD ELEMENT IN ARRAY
+// At the end
+const addLength = friend.push("Ross");
+console.log(friend);
+console.log(addLength);
+
+// In the start
+friend.unshift("Jack");
+console.log(friend);
+
+// REMOVE ELEMENT FROM ARRAY
+// Remove the last array
+const popped = friend.pop();
+console.log(popped);
+console.log(friend);
+
+// Remove from the start
+friend.shift();
+console.log(friend);
+
+console.log(friend.indexOf("David"));
+if (friend.includes("David")) {
+  console.log("Your friend name is David");
+}
+
+// OBJECT //
+
+const about = {
+  firstName: "Muskan",
+  lastName: "Monga",
+  age: 2024 - 2002,
+  job: "Student",
+  like: "Coding",
+  friend: ["Rachel", "Remi", "David", "Tony", "Ben"],
+};
+
+console.log(about);
+
+// To access a certain variable from the object
+// DOT NOTATION
+console.log(about.age);
+
+// BRACKET NOTATION
+console.log(about["like"]);
+
+const nameKey = "Name";
+console.log(about["first" + nameKey]);
+console.log(about["last" + nameKey]);
+
+// In this case dot notation will not work
+// console.log(about."last" + nameKey)
+
+// Prompt
+const interestedIn = prompt(
+  "What do you want to know about Muskan? Choose between firstName, lastName, age, job, like and friend"
+);
+
+if (about[interestedIn]) {
+  console.log(about[interestedIn]);
+} else {
+  console.log("Wrong Request!! Put the option correctly as it shows.");
+}
+
+about.location = "SIRSA";
+about["X-handle"] = "@mongamuskan0";
+console.log(about);
+
+// CHALLENGE //
+// bhavya has 3 freinds and his best friend is called micheal
+
+const bhavya = {
+  firstName: "Bhavya",
+  friends: ["Micheal", "Steven", "Peter"],
+};
+console.log(bhavya);
+console.log(bhavya["firstName"]);
+
+console.log(
+  `${bhavya["firstName"]} has ${bhavya.friends.length} freinds and his best friend is called ${bhavya.friends[0]}`
+);
