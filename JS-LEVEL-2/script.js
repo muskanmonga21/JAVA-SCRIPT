@@ -263,7 +263,25 @@ console.log(
   `${bhavya["firstName"]} has ${bhavya.friends.length} freinds and his best friend is called ${bhavya.friends[0]}`
 );
 
-// CHALLENGE
+const infoAbout = {
+  firstName: "Muskan",
+  lastName: "Monga",
+  birthYear: 2002,
+  job: "Student",
+  like: "Coding",
+  friend: ["Rachel", "Remi", "David", "Tony", "Ben"],
+  calcAge: function () {
+    this.age = 2024 - this.birthYear;
+    return this.age;
+  },
+};
+console.log(infoAbout.calcAge());
+console.log(infoAbout.age);
+console.log(infoAbout.age);
+console.log(infoAbout.age);
+console.log(infoAbout.age);
+
+// CHALLENGE //
 
 // "Muskan is a 'age' years student, and she has 'a' - 'not' driving license"
 
