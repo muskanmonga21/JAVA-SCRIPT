@@ -305,3 +305,104 @@ const muskan = {
 };
 
 console.log(muskan.getSummary());
+
+// FOR LOOP - it keep running while condition is TRUE
+
+console.log("Repition of code 1 !");
+console.log("Repition of code 2 !");
+console.log("Repition of code 3 !");
+console.log("Repition of code 4 !");
+console.log("Repition of code 5 !");
+// Insted of this we can use the 'for' loop
+
+for (let code = 1; code < 5; code++) {
+  console.log(`STARTING CODE ${code}`);
+  for (let rep = 1; rep <= 6; rep++) {
+    console.log(`STARTING CODE ${code} - Repitition of code ${rep} !`);
+  }
+}
+
+// for (let rep = 0; rep <= 10; rep++) {
+//   console.log(`${rep}`);
+// }
+
+const aboutM = {
+  firstName: "Muskan",
+  lastName: "Monga",
+  age: 2024 - 2002,
+  job: "Student",
+  like: "Coding",
+  friend: ["Rachel", "Remi", "David", "Tony", "Ben"],
+};
+
+const types = [];
+
+for (let i = 0; i < aboutM.length; i++) {
+  // read the array
+  console.log(aboutM[i], typeof aboutM[i]);
+  // Fill Array types
+  // types[i] = typeof aboutM[i]
+  types.push(typeof aboutM[i]);
+}
+// console.log(types);
+
+const theYears = [1991, 2007, 1969, 2021];
+const age = [];
+
+for (let i = 0; i < theYears.length; i++) {
+  age.push(2024 - theYears[i]);
+}
+console.log(age);
+
+// CONTINUE AND BREAK
+console.log("--- ONLY STRINS---");
+for (let i = 0; i < aboutM.length; i++) {
+  if (typeof aboutM[i] !== "string") continue;
+
+  console.log(aboutM[i], typeof aboutM[i]);
+}
+
+console.log("--- BREAK WITH NUMBER ---");
+for (let i = 0; i < aboutM.length; i++) {
+  if (typeof aboutM[i] === "number") break;
+
+  console.log(aboutM[i], typeof aboutM[i]);
+}
+
+const muskanMonga = [
+  "muskan",
+  "monga",
+  2024 - 2001,
+  "student",
+  ["Rachel", "Remi", "David", "Tony", "Ben"],
+  true,
+];
+
+// 0, 1, ...., 4
+// 4, 3, ...., 0
+
+for (let i = aboutM.length - 1; i >= 0; i--) {
+  console.log(i, aboutM[i]);
+}
+
+for (let exercise = 1; exercise < 4; exercise++) {
+  console.log(`-------- Starting exercise ${exercise}`);
+
+  for (let rep = 1; rep < 6; rep++) {
+    console.log(`Exercise ${exercise}: Lifting weight repition ${rep}🏋️`);
+  }
+}
+
+let rep = 1;
+while (rep <= 10) {
+  console.log(`WHILE: Lifting weights repetition ${rep} 🏋️`);
+  rep++;
+}
+
+let dice = Math.trunc(Math.random() * 6) + 1;
+
+while (dice !== 6) {
+  console.log(`You rolled a ${dice}`);
+  dice = Math.trunc(Math.random() * 6) + 1;
+  if (dice === 6) console.log("Loop is about to end.......");
+}
