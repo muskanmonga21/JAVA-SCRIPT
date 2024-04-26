@@ -158,46 +158,6 @@ if (ageIs >= 20) {
   const yearLeft = 20 - ageIs;
   console.log("Bhumika is driving safely now");
 }
-// CHALLENGE //
-// let name1 = Mark;
-// let name2 = John;
-
-// BMI = mass/height**2=mass/(height*height)   [mass is in kg and height in meter]
-
-// let markHighBMI = Mark > John;
-// DATA - 1
-const markMass = 78;
-const markHeight = 1.69;
-const BMIOfMark = markMass / markHeight ** 2;
-
-const johnMass = 92;
-const johnHeight = 1.95;
-const BMIOfJohn = johnMass / johnHeight ** 2;
-
-const markHighBMI = BMIOfMark > BMIOfJohn;
-console.log(BMIOfMark, BMIOfJohn, markHighBMI);
-// DATA - 2
-const massOfMark = 95;
-const heightOfMark = 1.88;
-const BMIMark = massOfMark / heightOfMark ** 2;
-
-const massOfJohn = 85;
-const heightOfJohn = 1.76;
-const BMIJohn = massOfJohn / heightOfJohn ** 2;
-
-const markHigherBMI = BMIMark > BMIJohn;
-console.log(BMIMark, BMIJohn, markHigherBMI);
-
-// 1st PART
-
-console.log(
-  "Mark's BMI " + BMIOfMark + " is higher than John's " + BMIOfJohn + " !"
-);
-
-// 2nd PART
-
-const msgNew1 = `Mark's BMI  ${BMIMark} is higher than Jjohn's  ${BMIJohn}!`;
-console.log(msgNew1);
 
 // DAY - 4 //
 
@@ -342,29 +302,6 @@ if (age >= 18) {
 console.log(drink2);
 
 console.log(`I like to drink ${age >= 18 ? "Wine🍷" : "Water💧"}`);
-
-// CHALLENGE 3 //
-//  DATA
-const dolphin = [96, 108, 89];
-const dolphinBonus1 = [97, 112, 101];
-const dolphinBonus2 = [97, 112, 101];
-const koala = [88, 91, 110];
-const koalaBonus1 = [109, 95, 123];
-const koalaBonus2 = [109, 95, 106];
-
-const dolphinavg = 96 + 108 + 89 + 97 + 112 + 101 + 97 + 112 + 101;
-console.log(dolphinavg / 9);
-const koalaavg = 88 + 91 + 110 + 109 + 95 + 123 + 109 + 95 + 106;
-console.log(dolphinavg / 9);
-
-// compare avg scores
-if (dolphinavg > koalaavg) {
-  console.log("Dolphin wins!!");
-} else if (dolphinavg < koalaavg) {
-  console.log("Koala Wins!!");
-} else {
-  console.log("It's a Draw!");
-}
 
 // CHALLANGE 4 //
 // DATA
