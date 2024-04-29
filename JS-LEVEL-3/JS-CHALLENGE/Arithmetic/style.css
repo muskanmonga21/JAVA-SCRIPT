@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 3.2rem;
+  background: linear-gradient(to left, #8eecf5, #98f5e1);
+  color: #333;
+}
+
+/* VALUES */
+.value1,
+.value2 {
+  margin-top: 16rem;
+  text-align: center;
+}
+.value1 label,
+.value2 label {
+  display: block;
+  font-size: 2.4rem;
+  font-weight: 500;
+  margin-bottom: 1.4rem;
+}
+.value1 input,
+.value2 input {
+  width: 20%;
+  padding: 1.2rem;
+  margin-bottom: 4rem;
+  font-size: 2rem;
+  font-family: inherit;
+  text-align: center;
+  border-radius: 4rem;
+  box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.1);
+}
+.value1 input::placeholder,
+.value2 input::placeholder {
+  color: #767676;
+  font-weight: 600;
+}
+
+/* SIGNS */
+.signs {
+  margin: 2rem 4rem;
+  text-align: center;
+}
+.btn {
+  padding: 1.2rem 2.4rem;
+  font-size: 3.2rem;
+  font-weight: 600;
+  font-family: inherit;
+  border-radius: 2rem;
+  background-color: #fff;
+  box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.1);
+}
+.btn:hover {
+  color: #ffffff;
+  background-color: #060606;
+}
+
+/* RESULT */
+.answer {
+  margin: 2rem;
+  text-align: center;
+  margin-top: 4rem;
+}
+.answer label {
+  display: block;
+  margin-bottom: 1.4rem;
+  font-size: 3.2rem;
+  font-weight: 500;
+  font-family: inherit;
+}
+.answer input {
+  width: 20%;
+  padding: 1.2rem;
+  margin-bottom: 4rem;
+  font-size: 2rem;
+  font-family: inherit;
+  text-align: center;
+  border-radius: 4rem;
+  box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.1);
+}
+.answer input::placeholder {
+  color: #767676;
+  font-weight: 600;
+}
